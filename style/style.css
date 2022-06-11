@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-collor:#1CD1B0; 
+  --second-collor:#00669F;
+  --collor-text: black;
+  --collor-white:white;
+  --collor-h2:#333333;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.menor {
+  display: flex;
+  height: 18px;
+  background-color: var(--primary-collor);
+  align-items: center;
+  color: var(--collor-text);
+  padding-left: 1%;
+}
+
+.maior {
+  display: flex;
+  background-color: var(--second-collor);
+  align-items: center;
+  font-size: 30px;
+  gap: 15px;
+  padding-left: 0.5%;
+
+}
+
+.nome{
+  color: var(--collor-white);
+  font-weight: 400px;
+  font-size: 25px;
+}
+
+.log {
+  color: var(--collor-h2);
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.conteudo input {
+  width: 200px;
+  padding-left: 10px;
+}
+
+input[type="submit"]{
+  background-color: var(--primary-collor);
+  border-radius: 23px;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  
+}
+
+.centralizar  {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--second-collor);
+  margin-left: 10px;
+}
+
+.rodape {
+  display: flex;
+  background-color: var(--second-collor);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--collor-white);
+
+}
+
+.front-end{
+  color: var(--collor-text);
+  margin-left: 10px;
+}
+
+/* efeitos*/
+
+input:focus{
+
+  border: 3px solid var(--primary-collor);
+}
+
+input[type="submit"]:hover{
+  color: var(--collor-white);
+  font-weight: bold;
+}
+
+.link:hover{
+font-weight: bold;
+
+}
